@@ -1,0 +1,12 @@
+DELETE FROM DEPARTMENT;
+DELETE FROM EMPLOYEE;
+ALTER SEQUENCE global_seq RESTART WITH 100000;
+
+INSERT INTO DEPARTMENT (NAME)
+VALUES  ('отдел 1'),
+        ('отдел 2');
+
+INSERT INTO EMPLOYEE (DEPARTMENT_ID, LASTNAME, FIRSTNAME, MIDDLENAME, DATEBIRTHDAY, SALARY)
+VALUES  (100000, 'Иванов', 'Иван', 'Иванович', '2000-01-10', 150000.14),
+        (100000, 'Петров', 'Пётр', 'Петрович', '2001-01-10', 130000.66),
+        (100001, 'Сидоров', 'Сидр', 'Сидорович', '2002-01-10', 100000.77);
