@@ -1,15 +1,13 @@
 package ru.testtask.sber.model;
 
-import java.math.BigDecimal;
-
 public class DepartmentTo {
     private final Integer id;
 
     private final String name;
 
-    private final BigDecimal averageSalary;
+    private final String averageSalary;
 
-    public DepartmentTo(Integer id, String name, BigDecimal averageSalary) {
+    public DepartmentTo(Integer id, String name, String averageSalary) {
         this.id = id;
         this.name = name;
         this.averageSalary = averageSalary;
@@ -23,7 +21,7 @@ public class DepartmentTo {
         return name;
     }
 
-    public BigDecimal getAverageSalary() {
+    public String getAverageSalary() {
         return averageSalary;
     }
 

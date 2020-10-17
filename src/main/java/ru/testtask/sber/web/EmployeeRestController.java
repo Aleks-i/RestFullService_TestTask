@@ -22,7 +22,7 @@ import static ru.testtask.sber.util.ValidationUtil.checkNew;
 @RestController
 @RequestMapping(value = EmployeeRestController.REST_URL, produces = MediaType.APPLICATION_JSON_VALUE)
 public class EmployeeRestController {
-    static final String REST_URL = "/sber/employees";
+    static final String REST_URL = "/employees";
     private static final Logger log = getLogger(EmployeeRestController.class);
 
     @Autowired
