@@ -24,14 +24,16 @@ public class DepartmentUtil {
     }
 
     private static String getAverageSalary(List<Employee> employees) {
-        NumberFormat formatter = NumberFormat.getInstance(new Locale("en_US"));
-
-        BigDecimal summingSolary = new BigDecimal("0");
-        BigDecimal count = new BigDecimal("0");
-        for (Employee employee : employees) {
-            count = count.add(new BigDecimal("1"));
-            summingSolary = summingSolary.add(employee.getSalary());
+        if (employees.isEmpty()) return "0";
+        else {
+            NumberFormat formatter = NumberFormat.getInstance(new Locale("en_US"));
+            BigDecimal summingSolary = new BigDecimal("0");
+            BigDecimal count = new BigDecimal("0");
+            for (Employee employee : employees) {
+                count = count.add(new BigDecimal("1"));
+                summingSolary = summingSolary.add(employee.getSalary());
+            }
+            return formatter.format(summingSolary.divide(count).setScale(2));
         }
-        return formatter.format(summingSolary.divide(count).setScale(2));
     }
 }

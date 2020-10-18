@@ -28,7 +28,7 @@ public class DepartmentRestController {
     @Autowired
     private DepartmentService departmentService;
 
-    @PostMapping(value = "/create", consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Department> create(@RequestBody Department department) {
         checkNew(department);
         log.info("save department {}", department);

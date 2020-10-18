@@ -1,14 +1,12 @@
 var departmentsAjaxUrl = "sber/departments/";
 
-// $(document).ready(function () {
 $(function () {
     makeEditable(departmentsAjaxUrl, {
         "columns": [
             {
                 "data": "name",
                 "render": function (data, type, row, id) {
-                    return "<a href='employees/" + row.id + "'>" + data + "</a>"
-//                    makeEditable("employees/" + row.id)
+                    return "<a href='employees/'>" + data + "</a>"
                 }
             },
             {

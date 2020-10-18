@@ -6,8 +6,8 @@
 <html>
 <jsp:include page="fragments/headTag.jsp"/>
 <body>
-<script type="text/javascript" src="recources/js/sber.common.js" defer></script>
-<script type="text/javascript" src="recources/js/sber.employees.js" defer></script>
+<script type="text/javascript" src="resources/js/sber.common.js" defer></script>
+<script type="text/javascript" src="resources/js/sber.employees.js" defer></script>
 <jsp:include page="fragments/bodyHeader.jsp"/>
 
 <div class="jumbotron pt-4">
@@ -25,10 +25,6 @@
                         <div class="col-2">
                             <label for="endDate"><spring:message code="employees.endDate"/></label>
                             <input class="form-control" name="endDate" id="endDate" autocomplete="off">
-                        </div>
-                        <div class="offset-2 col-2">
-                            <label for="date"><spring:message code="employees.date"/></label>
-                            <input class="form-control" name="date" id="date" autocomplete="off">
                         </div>
                     </div>
                 </form>
