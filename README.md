@@ -35,6 +35,8 @@ o web
 
 ####                DepartmentRestController
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/65b08fb8531e46ff9d8b421310856b68)](https://app.codacy.com/gh/Aleks-i/RestFullService_TestTaskForSber?utm_source=github.com&utm_medium=referral&utm_content=Aleks-i/RestFullService_TestTaskForSber&utm_campaign=Badge_Grade)
+
 #### get All Departments
 curl -s http://localhost:8080/testtaskforsber/sber/departments
 -->
